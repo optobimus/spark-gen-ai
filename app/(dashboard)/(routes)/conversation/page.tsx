@@ -17,11 +17,7 @@ import Loader from "@/components/loader";
 import {cn} from "@/lib/utils";
 import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
-
-// Define the form schema
-const formSchema = z.object({
-    prompt: z.string().min(1, "Prompt is required"),
-});
+import {formSchema} from "@/app/(dashboard)/(routes)/conversation/constants";
 
 const ConversationPage = () => {
     const router = useRouter();

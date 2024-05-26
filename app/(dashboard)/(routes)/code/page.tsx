@@ -18,11 +18,7 @@ import {cn} from "@/lib/utils";
 import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
 import ReactMarkdown from "react-markdown";
-
-// Define the form schema
-const formSchema = z.object({
-    prompt: z.string().min(1, "Prompt is required"),
-});
+import {formSchema} from "@/app/(dashboard)/(routes)/code/constants";
 
 const CodePage = () => {
     const router = useRouter();
